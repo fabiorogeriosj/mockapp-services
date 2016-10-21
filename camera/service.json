@@ -1,0 +1,7 @@
+{
+  "name":"camera",
+  "description":"Take a picture from camera device",
+  "version":"1.0.1",
+  "cordova-command": "cordova plugin add cordova-plugin-camera",
+  "service": "cameraService.js"
+}
