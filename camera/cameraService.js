@@ -1,4 +1,4 @@
-mockappServices.service("cameraService", function(){
+mockappServices.service("cameraService", ['$timeout', function($timeout) {
 
   var config = {
     quality: 50,
@@ -29,7 +29,9 @@ mockappServices.service("cameraService", function(){
         } else {
           result.data = res;
         }
-        callback(result);
+        $timeout(function (){
+            callback(result);
+        });
       }, function(message){
         result.msg = message;
         callback(result);
@@ -92,4 +94,4 @@ mockappServices.service("cameraService", function(){
     }
   }
 
-});
+}]);
