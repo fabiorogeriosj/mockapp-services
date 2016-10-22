@@ -3,5 +3,6 @@
   "description":"Take a picture from camera device",
   "version":"1.0.1",
   "cordovaCommand": "cordova plugin add cordova-plugin-camera",
-  "service": "cameraService"
+  "service": "cameraService",
+  "style": "cameraService"
 }
